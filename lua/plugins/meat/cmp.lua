@@ -20,7 +20,7 @@ return {
                     --    https://github.com/rafamadriz/friendly-snippets
                     {
                         "rafamadriz/friendly-snippets",
-                        config = function() require("luasnip.loaders.from_vscode").lazy_load() end,
+                        -- config = function() require("luasnip.loaders.from_vscode").lazy_load() end,
                     },
                 },
             },
@@ -38,6 +38,8 @@ return {
             local cmp = require("cmp")
             local luasnip = require("luasnip")
             luasnip.config.setup({})
+
+            require("luasnip.loaders.from_vscode").lazy_load()
 
             cmp.setup({
                 snippet = {
