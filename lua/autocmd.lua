@@ -5,7 +5,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group = autocmd_group,
     callback = function() vim.highlight.on_yank() end,
 })
-vim.notify("test")
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     group = autocmd_group,
