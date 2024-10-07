@@ -1,10 +1,5 @@
 return {
     {
-        "echasnovski/mini.starter",
-        event = "VimEnter",
-        opts = {},
-    },
-    {
         "echasnovski/mini.icons",
         opts = {},
     },
