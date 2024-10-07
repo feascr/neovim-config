@@ -22,7 +22,7 @@ require("lazy").setup({
     --
     -- SKIN layer plugins
     -- mostly UI
-    require("plugins.skin.todo-comments-highlight"),
+    require("plugins.skin.todo_comments_highlight"),
     require("plugins.skin.theme"),
     require("plugins.skin.gitsigns"),
     require("plugins.skin.mini_skin"),
@@ -31,7 +31,7 @@ require("lazy").setup({
     require("plugins.skin.fidget"),
     require("plugins.skin.undotree"),
     require("plugins.skin.trouble"),
-    require("plugins.skin.markdown-preview"),
+    require("plugins.skin.markdown_preview"),
     -- Configure any other settings here. See the documentation for more details.
     -- automatically check for plugin updates
     checker = { enabled = false },
