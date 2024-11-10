@@ -20,3 +20,5 @@ vim.keymap.set("n", "<leader>nw", vim.cmd.Ex, { desc = "netrw" })
 
 vim.keymap.set("i", "<C-c>", "<Esc>")
 vim.keymap.set("x", "<leader>p", '"_dP', { noremap = true })
+
+vim.keymap.set("n", "<leader>tc", "<cmd>ToggleAutoComplete<cr>", { desc = "Toogle Auto Complete", noremap = true })

@@ -1,3 +1,4 @@
+require("cmd")
 require("keymaps")
 require("options")
 require("autocmd")
