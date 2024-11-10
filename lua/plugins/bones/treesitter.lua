@@ -20,6 +20,7 @@ return {
             "latex",
             "rst",
             "ninja",
+            "yaml",
         },
         -- Autoinstall languages that are not installed
         auto_install = true,
