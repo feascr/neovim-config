@@ -1,0 +1,6 @@
+require("cmd")
+require("keymaps")
+require("options")
+require("autocmd")
+require("config.lazy_bootstrap")
+require("config.lazy_plugins")
