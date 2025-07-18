@@ -22,9 +22,14 @@ return {
                 ["markdown-toc"] = {
                     condition = function(_, ctx)
                         for _, line in ipairs(vim.api.nvim_buf_get_lines(ctx.buf, 0, -1, false)) do
-                            if line:find("<!%-%- toc %-%->") then return true end
+                            if line:find("<!%-%- toc %-%->") then
+                                return true
+                            end
                         end
                     end,
+                },
+                ["clang-format"] = {
+                    args = { "-style", "{IndentWidth: 4, TabWidth: 4, UseTab: Never}" },
                 },
             },
             notify_on_error = false,
@@ -46,7 +51,6 @@ return {
             end,
             formatters_by_ft = {
                 lua = { "stylua" },
-
                 html = { "prettier" },
                 markdown = {
                     "prettier",
@@ -54,6 +58,7 @@ return {
                     "markdown-toc",
                 },
                 sh = { "shfmt" },
+                c = { "clang-format" },
             },
         },
     },
@@ -66,6 +71,7 @@ return {
                 "shfmt",
                 "markdownlint",
                 "markdown-toc",
+                "clang-format",
             },
         },
     },

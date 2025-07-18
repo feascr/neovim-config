@@ -4,12 +4,14 @@ vim.opt.mouse = "a"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.schedule(function() vim.opt.clipboard = "unnamedplus" end)
+vim.schedule(function()
+    vim.opt.clipboard = "unnamedplus"
+end)
 
 -- Enable break indent
 -- vim.opt.smartindent = true
 -- vim.opt.autoindent = true
-vim.opt.breakindent = false
+vim.opt.breakindent = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -54,7 +56,7 @@ vim.opt.scrolloff = 10
 vim.opt.signcolumn = "yes"
 
 -- remove wrapping
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 -- create and use cache for undos
 vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"

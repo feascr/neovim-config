@@ -7,6 +7,7 @@ return {
             "json5",
             "bash",
             "c",
+            "cpp",
             "diff",
             "html",
             "lua",
@@ -21,6 +22,7 @@ return {
             "rst",
             "ninja",
             "yaml",
+            "ini",
         },
         -- Autoinstall languages that are not installed
         auto_install = true,
